@@ -1,0 +1,22 @@
+a {
+  color: red;
+  font-style: oblique
+}
+body {
+  background-color: #A9A9A9;
+  font-style: italic
+}
+
+table.first{
+  border-collapse: collapse;
+}
+
+table.first td{
+
+border:1px solid;
+}
+
+.form-class {
+  width:200px;
+  padding:20px;
+}
