@@ -1,0 +1,21 @@
+<?php
+require_once 'classes/Group.php';
+require_once 'classes/Student.php';
+$group = new Group('Average class');
+$s1 = new Student('alexey', 20, $group);
+echo Student::$handscount . PHP_EOL;
+Student::$handscount = 3;
+$s2 = new Student('roman', 89, $group);
+$s3 = new Student('timur', 16, $group);
+new Student('sergey', 15, $group);
+new Student('michael', 7, $group);
+new Student('chel', 1, $group);
+new Student('man', 5, $group);
+new Student('student', 6, $group);
+new Student('nefarhad', 0, $group);
+new Student('michail', 61, $group);
+print('<pre>');
+var_dump($group);
+echo $s1->age . PHP_EOL;
+echo $s1->phone . PHP_EOL;
+echo $s3::$handscount . PHP_EOL;

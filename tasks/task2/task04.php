@@ -11,11 +11,11 @@ function eval4($x, $y)
         $m7 = $x * 2 + pow($y, 2);
         $m8 = $m7 - $m6;
         return $m1 * $m8;
-    }
-    catch (DivisionByZeroError $e){
+    } catch (DivisionByZeroError $e) {
         echo "Произошло деление на ноль";
     }
 }
+
 $tpl = file_get_contents('base.html');
 $html = str_replace('{title}', '(1 + y) * (2x + y² - (x + y) / (y + 1 / (x² - 4)))', $tpl);
 $html = str_replace('{form}', '<form action="task04.php" method="post">
