@@ -1,5 +1,5 @@
 <?php
-namespace Classes;
+namespace Lib;
 class Group
 {
     private string $title;
@@ -11,7 +11,7 @@ class Group
      */
     public function __construct(string $title, array $students = [])
     {
-        $this->title = $title;
+        $this->title = "From LIB" . $title;
         $this->students = $students;
     }
 
@@ -57,4 +57,5 @@ class Group
             $this->students[] = $students;
         }
     }
+
 }

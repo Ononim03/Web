@@ -1,8 +1,6 @@
 <?php
-
-namespace Classes;
+namespace Lib;
 require_once 'Group.php';
-
 class Student
 {
     public static $handscount = 2;
